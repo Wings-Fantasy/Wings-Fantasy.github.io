@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>悲剧小白的个人博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.hxshijie.com/"/>
+  <updated>2019-06-26T16:30:59.932Z</updated>
+  <id>https://www.hxshijie.com/</id>
+  
+  <author>
+    <name>悲剧小白</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>手把手教你做智能家居 - 用手机控制电灯</title>
+    <link href="https://www.hxshijie.com/2019/06/27/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%81%9A%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85-%E7%94%A8%E6%89%8B%E6%9C%BA%E6%8E%A7%E5%88%B6%E7%94%B5%E7%81%AF/"/>
+    <id>https://www.hxshijie.com/2019/06/27/手把手教你做智能家居-用手机控制电灯/</id>
+    <published>2019-06-26T16:02:35.000Z</published>
+    <updated>2019-06-26T16:30:59.932Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>都说2019年是5G的元年，那么5G是什么？它有什么用？我用一期视频来告诉你们。5G带给我们更大的带宽，更高的速度，同时，IPv6协议也即将民用。有网友计算过IPv4最多可以提供约42.9亿个地址，这个数字看起来很庞大，但事实上IPv4的地址早已枯竭。我们现在用的根本不是公网IP，而是被NAT转换过的私有IP，私有IP是分域的，不同的域可以有相同的IP，过多的不细说了。IPv6据说能给地球上的每一粒沙子一个公网IP，这样想象一下，是不是突然感觉IPv4太弱了。更高的速度在全民公网IP的加持下，必定会催生出一大批智能硬件产品。</p><h2 id="一些想说的话"><a href="#一些想说的话" class="headerlink" title="一些想说的话"></a>一些想说的话</h2><p>这个视频并不是给0基础的观众看的，观看这个视频前最少要会编程，会搭接基本电路。0基础编程的视频非常多，我这里就不列出来了。视频的最开始也阐明了这个视频所需要的前置知识。</p><h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><iframe src="https://player.bilibili.com/player.html?aid=40363452&amp;cid=70887051&amp;page=1" width="600" height="450" frameborder="0" allowfullscreen="true"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;都说2019年是5G的元年，那么5G是什么？它有什么用？我用一期视频来告诉你们。5G带给我们更大的带宽，更高的速度，同时，IPv6协议也即将
+      
+    
+    </summary>
+    
+      <category term="视频" scheme="https://www.hxshijie.com/categories/%E8%A7%86%E9%A2%91/"/>
+    
+    
+      <category term="智能家居" scheme="https://www.hxshijie.com/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/"/>
+    
+      <category term="Arduino" scheme="https://www.hxshijie.com/tags/Arduino/"/>
+    
+  </entry>
+  
+</feed>
