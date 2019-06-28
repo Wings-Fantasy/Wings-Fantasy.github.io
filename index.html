@@ -173,9 +173,9 @@
                         
                             <li><a  href="/archives/">所有文章</a></li>
                         
-                            <li><a  href="/categories/视频/">视频</a></li>
+                            <li><a  href="/categories/视频">视频</a></li>
                         
-                            <li><a  href="/categories/科技">科技</a></li>
+                            <li><a  href="/categories/软件发布">软件</a></li>
                         
                             <li><a  href="/categories/学习">学习</a></li>
                         
@@ -250,9 +250,9 @@
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
-                    <li><a href="/categories/视频/">视频</a></li>
+                    <li><a href="/categories/视频">视频</a></li>
                 
-                    <li><a href="/categories/科技">科技</a></li>
+                    <li><a href="/categories/软件发布">软件</a></li>
                 
                     <li><a href="/categories/学习">学习</a></li>
                 
@@ -314,7 +314,7 @@
 <li>判断质数的方式只有循环，即不断尝试所有可能的数字，筛选出最终的质数。</li>
 </ol>
 <h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>首先找到 4~100 中的所有偶数，然后把所有找到的数字拆分成指定的格式，接下来筛选都是质数的一组，一旦筛选出一组符合要求的组合就停止对该数字的筛选，转到下一个数字。</p>
-<p>这里我用 for 语句，从 4 开始，每次循环变量加 2 就得到了所有的偶数。然后用第二个 for 语句将这些数字拆分成指定的格式，再用第三个 for 语句筛选质数，当筛选出符合要求的一组后，用 break 语句结束对这个数字的筛选。整个代码中主要使用了三个 for 语句完成了这道题。</p>
+<p>这里我用 for 语句，从 4 开始，每次循环变量加 2 就得到了所有的偶数。接下来用第二个 for 语句将这些数字拆分成指定的格式，最后再用 for 语句筛选质数，当筛选出符合要求的一组后，用 break 语句结束对这个数字的筛选。整个代码中主要使用了三个 for 语句完成了这道题。</p>
 <h2 id="代码展示"><a href="#代码展示" class="headerlink" title="代码展示"></a>代码展示</h2><details>
     <summary>点击查看完整代码</summary>
 
