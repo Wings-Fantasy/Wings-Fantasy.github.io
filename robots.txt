@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /js
+Disallow: /css
+Disallow: /img
+Disallow: /back*
+Disallow: /fancy*
+Disallow: /font*
+Disallow: atom.xml
+Disallow: CNAME
+Disallow: search.json
+
+Sitemap: https://www.hxshijie.com/sitemap.xml
