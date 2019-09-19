@@ -19,22 +19,20 @@
   
   
   
-  <title>密码生成器 | 悲剧小白的个人博客</title>
+  <title>C++学习日记 - 找出给定数组中出现奇数次的数字 | 悲剧小白的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="为什么要做这个软件最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Token验证，就决定发出来了。 软件特点开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、同时支持大小写字母和数字的组合，最高支持一次生成100位的密码，">
-<meta name="keywords" content="C++,原创,开源">
+  <meta name="description" content="题目原文给定一个随机数组，用最小的空间复杂度找出数组中出现奇数次的数字。 问题解析给定的是随机数组，数组长度就不能确定了，这样就不能每个数字统计个数了。要求使用最小的空间复杂度，那么就尽量少用中间值。 前置知识题目相关的知识有两个，分别是：  数组的遍历，这里用for-each循环比较好 在众多数字中排除相同数字的最好方法是使用异或算法，异或算法符合交换律。任何数字与0异或都得数字本身，两个相同数">
+<meta name="keywords" content="C++,编程题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="密码生成器">
-<meta property="og:url" content="https://www.hxshijie.com/2019/06/28/密码生成器/index.html">
+<meta property="og:title" content="C++学习日记 - 找出给定数组中出现奇数次的数字">
+<meta property="og:url" content="https://www.hxshijie.com/2019/09/19/C++学习日记-找出给定数组中出现奇数次的数字/index.html">
 <meta property="og:site_name" content="悲剧小白的个人博客">
-<meta property="og:description" content="为什么要做这个软件最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Token验证，就决定发出来了。 软件特点开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、同时支持大小写字母和数字的组合，最高支持一次生成100位的密码，">
+<meta property="og:description" content="题目原文给定一个随机数组，用最小的空间复杂度找出数组中出现奇数次的数字。 问题解析给定的是随机数组，数组长度就不能确定了，这样就不能每个数字统计个数了。要求使用最小的空间复杂度，那么就尽量少用中间值。 前置知识题目相关的知识有两个，分别是：  数组的遍历，这里用for-each循环比较好 在众多数字中排除相同数字的最好方法是使用异或算法，异或算法符合交换律。任何数字与0异或都得数字本身，两个相同数">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https://www.hxshijie.com/img/software/密码生成器.jpg">
-<meta property="og:updated_time" content="2019-06-28T13:01:55.958Z">
+<meta property="og:updated_time" content="2019-09-19T06:45:53.960Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="密码生成器">
-<meta name="twitter:description" content="为什么要做这个软件最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Token验证，就决定发出来了。 软件特点开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、同时支持大小写字母和数字的组合，最高支持一次生成100位的密码，">
-<meta name="twitter:image" content="https://www.hxshijie.com/img/software/密码生成器.jpg">
+<meta name="twitter:title" content="C++学习日记 - 找出给定数组中出现奇数次的数字">
+<meta name="twitter:description" content="题目原文给定一个随机数组，用最小的空间复杂度找出数组中出现奇数次的数字。 问题解析给定的是随机数组，数组长度就不能确定了，这样就不能每个数字统计个数了。要求使用最小的空间复杂度，那么就尽量少用中间值。 前置知识题目相关的知识有两个，分别是：  数组的遍历，这里用for-each循环比较好 在众多数字中排除相同数字的最好方法是使用异或算法，异或算法符合交换律。任何数字与0异或都得数字本身，两个相同数">
   
     <link rel="alternative" href="/atom.xml" title="悲剧小白的个人博客" type="application/atom+xml">
   
@@ -286,11 +284,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-密码生成器" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-C++学习日记-找出给定数组中出现奇数次的数字" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2019/06/28/密码生成器/" class="article-date">
-      <time datetime="2019-06-28T12:42:59.000Z" itemprop="datePublished">2019-06-28</time>
+      <a  href="/2019/09/19/C++学习日记-找出给定数组中出现奇数次的数字/" class="article-date">
+      <time datetime="2019-09-19T06:19:06.000Z" itemprop="datePublished">2019-09-19</time>
 </a>
 
     </div>
@@ -304,7 +302,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      密码生成器
+      C++学习日记 - 找出给定数组中出现奇数次的数字
     </h1>
   
 
@@ -314,13 +312,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/软件发布/">软件发布</a>
+    <a class="article-category-link" href="/categories/学习/">学习</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/原创/">原创</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源/">开源</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程题/">编程题</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -330,12 +328,18 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="为什么要做这个软件"><a href="#为什么要做这个软件" class="headerlink" title="为什么要做这个软件"></a>为什么要做这个软件</h2><p>最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Token验证，就决定发出来了。</p>
-<h2 id="软件特点"><a href="#软件特点" class="headerlink" title="软件特点"></a>软件特点</h2><p>开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、同时支持大小写字母和数字的组合，最高支持一次生成100位的密码，绝对够用、生成后的密码支持更改，可以用来做一些微调、新增复制到剪贴板功能，一键复制密码</p>
-<h2 id="软件展示"><a href="#软件展示" class="headerlink" title="软件展示"></a>软件展示</h2><div align="center"><img alt="密码生成器 软件界面" src="../../../../img/software/密码生成器.jpg"></div>
+        <h2 id="题目原文"><a href="#题目原文" class="headerlink" title="题目原文"></a>题目原文</h2><p>给定一个随机数组，用最小的空间复杂度找出数组中出现奇数次的数字。</p>
+<h2 id="问题解析"><a href="#问题解析" class="headerlink" title="问题解析"></a>问题解析</h2><p>给定的是随机数组，数组长度就不能确定了，这样就不能每个数字统计个数了。要求使用最小的空间复杂度，那么就尽量少用中间值。</p>
+<h2 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h2><p>题目相关的知识有两个，分别是：</p>
+<ol>
+<li>数组的遍历，这里用for-each循环比较好</li>
+<li>在众多数字中排除相同数字的最好方法是使用异或算法，异或算法符合交换律。任何数字与0异或都得数字本身，两个相同数字异或得0。</li>
+</ol>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>用for-each循环拿到所有的数字，将所有数字顺序做异或计算，最后得到的数字就是出现奇数次的数字</p>
+<h2 id="代码展示"><a href="#代码展示" class="headerlink" title="代码展示"></a>代码展示</h2><details>
+    <summary>点击查看完整代码</summary>
 
-<h2 id="开源地址-amp-软件下载"><a href="#开源地址-amp-软件下载" class="headerlink" title="开源地址 &amp; 软件下载"></a>开源地址 &amp; 软件下载</h2><p>软件在GitHub上开源，地址：<a href="https://github.com/Wings-Fantasy/RandomPassword" target="_blank" rel="noopener">https://github.com/Wings-Fantasy/RandomPassword</a><br>软件提供32位与64位的可执行程序，下载地址：<a href="https://github.com/Wings-Fantasy/RandomPassword/releases" target="_blank" rel="noopener">https://github.com/Wings-Fantasy/RandomPassword/releases</a></p>
-
+<pre><code><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">int</span> numbers[] = &#123;<span class="number">2</span>, <span class="number">5</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">6</span>&#125;;<span class="comment">//这里是我测试用的数组</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> number = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> tmp : numbers)</span><br><span class="line">    &#123;</span><br><span class="line">        number = number ^ tmp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"出现奇数次的数字是："</span> &lt;&lt; number &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></code></pre></details>
       
     </div>
     
@@ -343,13 +347,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a  href="/2019/06/28/密码生成器/">密码生成器</a></p>
+        <p><span>本文标题:</span><a  href="/2019/09/19/C++学习日记-找出给定数组中出现奇数次的数字/">C++学习日记 - 找出给定数组中出现奇数次的数字</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 悲剧小白 的个人博客">悲剧小白</a></p>
-        <p><span>发布时间:</span>2019年06月28日 - 20时42分</p>
-        <p><span>最后更新:</span>2019年06月28日 - 21时01分</p>
+        <p><span>发布时间:</span>2019年09月19日 - 14时19分</p>
+        <p><span>最后更新:</span>2019年09月19日 - 14时45分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2019/06/28/密码生成器/" title="密码生成器">https://www.hxshijie.com/2019/06/28/密码生成器/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://www.hxshijie.com/2019/06/28/密码生成器/　　作者: 悲剧小白" title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2019/09/19/C++学习日记-找出给定数组中出现奇数次的数字/" title="C++学习日记 - 找出给定数组中出现奇数次的数字">https://www.hxshijie.com/2019/09/19/C++学习日记-找出给定数组中出现奇数次的数字/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://www.hxshijie.com/2019/09/19/C++学习日记-找出给定数组中出现奇数次的数字/　　作者: 悲剧小白" title=""></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" title="国际 (CC BY-NC-ND 4.0)" target = "_blank">"署名-非商用-禁止演绎 4.0"</a> 转载请保留原文链接及作者。
@@ -360,18 +364,9 @@
 
 <nav id="article-nav">
   
-    <a  href="/2019/07/02/国际象棋学习日记-记录一局比赛/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          国际象棋学习日记 - 记录一局比赛
-        
-      </div>
-    </a>
   
-  
-    <a  href="/2019/06/27/C++学习日记-拆分数字/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">C++学习日记 - 拆分数字</div>
+    <a  href="/2019/07/02/国际象棋学习日记-记录一局比赛/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">国际象棋学习日记 - 记录一局比赛</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -383,7 +378,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么要做这个软件"><span class="toc-number">1.</span> <span class="toc-text">为什么要做这个软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件特点"><span class="toc-number">2.</span> <span class="toc-text">软件特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件展示"><span class="toc-number">3.</span> <span class="toc-text">软件展示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开源地址-amp-软件下载"><span class="toc-number">4.</span> <span class="toc-text">开源地址 &amp; 软件下载</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目原文"><span class="toc-number">1.</span> <span class="toc-text">题目原文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题解析"><span class="toc-number">2.</span> <span class="toc-text">问题解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前置知识"><span class="toc-number">3.</span> <span class="toc-text">前置知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解题思路"><span class="toc-number">4.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码展示"><span class="toc-number">5.</span> <span class="toc-text">代码展示</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -447,7 +442,7 @@
 <script src="/js/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: '密码生成器', // 可选。默认为 location.href
+  id: 'C++学习日记 - 找出给定数组中出现奇数次的数字', // 可选。默认为 location.href
   owner: 'Wings-Fantasy',
   repo: 'Wings-Fantasy.github.io',
   oauth: {
@@ -464,13 +459,11 @@ gitment.render('comments')
 
     <div class="scroll" id="post-nav-button">
         
-            <a  href="/2019/07/02/国际象棋学习日记-记录一局比赛/" title="上一篇: 国际象棋学习日记 - 记录一局比赛">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a  href="/2019/06/27/C++学习日记-拆分数字/" title="下一篇: C++学习日记 - 拆分数字">
+            <a  href="/2019/07/02/国际象棋学习日记-记录一局比赛/" title="下一篇: 国际象棋学习日记 - 记录一局比赛">
                 <i class="fa fa-angle-right"></i>
             </a>
         
