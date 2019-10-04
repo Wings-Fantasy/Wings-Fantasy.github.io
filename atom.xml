@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.hxshijie.com/"/>
-  <updated>2019-09-19T06:45:53.960Z</updated>
+  <updated>2019-10-04T11:08:22.720Z</updated>
   <id>https://www.hxshijie.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>国际象棋学习日记 - 子力价值</title>
+    <link href="https://www.hxshijie.com/2019/10/04/%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E5%AD%90%E5%8A%9B%E4%BB%B7%E5%80%BC/"/>
+    <id>https://www.hxshijie.com/2019/10/04/国际象棋学习日记-子力价值/</id>
+    <published>2019-10-04T05:26:53.000Z</published>
+    <updated>2019-10-04T11:08:22.720Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是子力价值"><a href="#什么是子力价值" class="headerlink" title="什么是子力价值"></a>什么是子力价值</h2><p>在国际象棋中，每一个棋子都有自己的用处与价值，子力价值就是用来衡量棋子价值的参数。我见过双车杀王的，也见过用兵堵王的，所以，不能因为子力价值小就抛弃某一个棋子。</p><h2 id="每一个子的价值分别是多少"><a href="#每一个子的价值分别是多少" class="headerlink" title="每一个子的价值分别是多少"></a>每一个子的价值分别是多少</h2><div>    <table>        <tr>            <th></th>            <th>小兵</th>            <th>骑士</th>            <th>主教</th>            <th>战车</th>            <th>皇后</th>        </tr>        <tr>            <td>教科书</td>            <td>1</td>            <td>3</td>            <td>3</td>            <td>5</td>            <td>10</td>        </tr>        <tr>            <td>电脑AI</td>            <td>1</td>            <td>3.25</td>            <td>3.50</td>            <td>5</td>            <td>9.75</td>        </tr>    </table></div><p>从这个表格中，我们可以清晰地看出<code>国际象棋的教科书</code>和<code>计算机AI</code>给出的子力价值不同。实际上，国际象棋的子力价值只是一个参考值并不是一个确定不变的数值。子力价值会随着棋子的位置变化而变化，即将到达敌方底线的小兵远比一个在出发点的小兵的子力价值要高。国王的子力价值无限高，国际象棋最终的目标是将死国王，一旦国王被将死游戏会立即结束。<br>我基于对国际象棋的理解，自己整理了一组子力价值并应用到了每一局对局中，我使用的子力价值是：</p><div>    <table>        <tr>            <th></th>            <th>小兵</th>            <th>骑士</th>            <th>主教</th>            <th>战车</th>            <th>皇后</th>        </tr>        <tr>            <td>悲剧小白</td>            <td>1</td>            <td>3</td>            <td>3.50</td>            <td>5</td>            <td>10</td>        </tr>    </table></div><h2 id="子力价值的用处"><a href="#子力价值的用处" class="headerlink" title="子力价值的用处"></a>子力价值的用处</h2><p>在一局游戏中，如果出现了两个棋子同时即将被吃的时候，选择保护哪个棋子、或者出现了需要换子的时候，使用哪个子和对方换之类的情况下，都可以将子力价值考虑进来。这时候做出的决定会在一定程度上帮助你赢得这局游戏。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;什么是子力价值&quot;&gt;&lt;a href=&quot;#什么是子力价值&quot; class=&quot;headerlink&quot; title=&quot;什么是子力价值&quot;&gt;&lt;/a&gt;什么是子力价值&lt;/h2&gt;&lt;p&gt;在国际象棋中，每一个棋子都有自己的用处与价值，子力价值就是用来衡量棋子价值的参数。我见过双车杀王的，
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://www.hxshijie.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="国际象棋" scheme="https://www.hxshijie.com/tags/%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>C++学习日记 - 找出给定数组中出现奇数次的数字</title>
