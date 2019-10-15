@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.hxshijie.com/"/>
-  <updated>2019-10-04T11:08:22.720Z</updated>
+  <updated>2019-10-12T01:43:56.197Z</updated>
   <id>https://www.hxshijie.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.hxshijie.com/2019/10/04/%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E5%AD%90%E5%8A%9B%E4%BB%B7%E5%80%BC/"/>
     <id>https://www.hxshijie.com/2019/10/04/国际象棋学习日记-子力价值/</id>
     <published>2019-10-04T05:26:53.000Z</published>
-    <updated>2019-10-04T11:08:22.720Z</updated>
+    <updated>2019-10-12T01:43:56.197Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是子力价值"><a href="#什么是子力价值" class="headerlink" title="什么是子力价值"></a>什么是子力价值</h2><p>在国际象棋中，每一个棋子都有自己的用处与价值，子力价值就是用来衡量棋子价值的参数。我见过双车杀王的，也见过用兵堵王的，所以，不能因为子力价值小就抛弃某一个棋子。</p><h2 id="每一个子的价值分别是多少"><a href="#每一个子的价值分别是多少" class="headerlink" title="每一个子的价值分别是多少"></a>每一个子的价值分别是多少</h2><div>    <table>        <tr>            <th></th>            <th>小兵</th>            <th>骑士</th>            <th>主教</th>            <th>战车</th>            <th>皇后</th>        </tr>        <tr>            <td>教科书</td>            <td>1</td>            <td>3</td>            <td>3</td>            <td>5</td>            <td>10</td>        </tr>        <tr>            <td>电脑AI</td>            <td>1</td>            <td>3.25</td>            <td>3.50</td>            <td>5</td>            <td>9.75</td>        </tr>    </table></div><p>从这个表格中，我们可以清晰地看出<code>国际象棋的教科书</code>和<code>计算机AI</code>给出的子力价值不同。实际上，国际象棋的子力价值只是一个参考值并不是一个确定不变的数值。子力价值会随着棋子的位置变化而变化，即将到达敌方底线的小兵远比一个在出发点的小兵的子力价值要高。国王的子力价值无限高，国际象棋最终的目标是将死国王，一旦国王被将死游戏会立即结束。<br>我基于对国际象棋的理解，自己整理了一组子力价值并应用到了每一局对局中，我使用的子力价值是：</p><div>    <table>        <tr>            <th></th>            <th>小兵</th>            <th>骑士</th>            <th>主教</th>            <th>战车</th>            <th>皇后</th>        </tr>        <tr>            <td>悲剧小白</td>            <td>1</td>            <td>3</td>            <td>3.50</td>            <td>5</td>            <td>10</td>        </tr>    </table></div><h2 id="子力价值的用处"><a href="#子力价值的用处" class="headerlink" title="子力价值的用处"></a>子力价值的用处</h2><p>在一局游戏中，如果出现了两个棋子同时即将被吃的时候，选择保护哪个棋子、或者出现了需要换子的时候，使用哪个子和对方换之类的情况下，都可以将子力价值考虑进来。这时候做出的决定会在一定程度上帮助你赢得这局游戏。</p>]]></content>
     
@@ -101,9 +101,9 @@
     <link href="https://www.hxshijie.com/2019/06/28/%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/"/>
     <id>https://www.hxshijie.com/2019/06/28/密码生成器/</id>
     <published>2019-06-28T12:42:59.000Z</published>
-    <updated>2019-06-28T13:01:55.958Z</updated>
+    <updated>2019-10-15T01:48:19.883Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="为什么要做这个软件"><a href="#为什么要做这个软件" class="headerlink" title="为什么要做这个软件"></a>为什么要做这个软件</h2><p>最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Token验证，就决定发出来了。</p><h2 id="软件特点"><a href="#软件特点" class="headerlink" title="软件特点"></a>软件特点</h2><p>开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、同时支持大小写字母和数字的组合，最高支持一次生成100位的密码，绝对够用、生成后的密码支持更改，可以用来做一些微调、新增复制到剪贴板功能，一键复制密码</p><h2 id="软件展示"><a href="#软件展示" class="headerlink" title="软件展示"></a>软件展示</h2><div align="center"><img alt="密码生成器 软件界面" src="../../../../img/software/密码生成器.jpg"></div><h2 id="开源地址-amp-软件下载"><a href="#开源地址-amp-软件下载" class="headerlink" title="开源地址 &amp; 软件下载"></a>开源地址 &amp; 软件下载</h2><p>软件在GitHub上开源，地址：<a href="https://github.com/Wings-Fantasy/RandomPassword" target="_blank" rel="noopener">https://github.com/Wings-Fantasy/RandomPassword</a><br>软件提供32位与64位的可执行程序，下载地址：<a href="https://github.com/Wings-Fantasy/RandomPassword/releases" target="_blank" rel="noopener">https://github.com/Wings-Fantasy/RandomPassword/releases</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="为什么要做这个软件"><a href="#为什么要做这个软件" class="headerlink" title="为什么要做这个软件"></a>为什么要做这个软件</h2><p>最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Token验证，就决定发出来了。</p><h2 id="软件特点"><a href="#软件特点" class="headerlink" title="软件特点"></a>软件特点</h2><p>开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、同时支持大小写字母和数字的组合，最高支持一次生成100位的密码，绝对够用、生成后的密码支持更改，可以用来做一些微调、新增复制到剪贴板功能，一键复制密码</p><h2 id="软件展示"><a href="#软件展示" class="headerlink" title="软件展示"></a>软件展示</h2><div align="center"><img alt="密码生成器 软件界面" src="../../../../img/software/密码生成器.jpg"></div><h2 id="开源地址-amp-软件下载"><a href="#开源地址-amp-软件下载" class="headerlink" title="开源地址 &amp; 软件下载"></a>开源地址 &amp; 软件下载</h2><p>软件在GitHub上开源，地址：<a href="https://github.com/Wings-Fantasy/RandomPassword" target="_blank" rel="noopener">源码链接</a><br>软件提供32位与64位的可执行程序，下载地址：<a href="https://github.com/Wings-Fantasy/RandomPassword/releases" target="_blank" rel="noopener">下载软件</a></p>]]></content>
     
     <summary type="html">
     
@@ -157,9 +157,9 @@
     <link href="https://www.hxshijie.com/2019/06/27/%E9%BC%A0%E6%A0%87%E8%BF%9E%E7%82%B9%E5%99%A8/"/>
     <id>https://www.hxshijie.com/2019/06/27/鼠标连点器/</id>
     <published>2019-06-27T02:44:58.000Z</published>
-    <updated>2019-06-27T03:18:52.721Z</updated>
+    <updated>2019-10-15T01:44:00.932Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="为什么要做这个软件"><a href="#为什么要做这个软件" class="headerlink" title="为什么要做这个软件"></a>为什么要做这个软件</h2><p>这其实是我在玩一个小游戏的时候，需要重复、快速的点击鼠标，但是我还比较懒，故制作了这样一个小程序来代替我执行这些操作。</p><h2 id="软件特点"><a href="#软件特点" class="headerlink" title="软件特点"></a>软件特点</h2><p>开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、新增的随机间隔选项可以在一定程度上防止游戏作弊检测、支持连点鼠标的所有基础按键、支持快捷键控制。</p><h2 id="软件展示"><a href="#软件展示" class="headerlink" title="软件展示"></a>软件展示</h2><div align="center"><img alt="鼠标连点器 软件界面" src="../../../../img/software/鼠标连点器.jpg"></div><h2 id="开源地址-amp-软件下载"><a href="#开源地址-amp-软件下载" class="headerlink" title="开源地址 &amp; 软件下载"></a>开源地址 &amp; 软件下载</h2><p>软件在GitHub上开源，地址：<a href="https://github.com/Wings-Fantasy/Mouse-Click" target="_blank" rel="noopener">https://github.com/Wings-Fantasy/Mouse-Click</a><br>软件提供32位与64位的可执行程序，下载地址：<a href="https://github.com/Wings-Fantasy/Mouse-Click/releases" target="_blank" rel="noopener">https://github.com/Wings-Fantasy/Mouse-Click/releases</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="为什么要做这个软件"><a href="#为什么要做这个软件" class="headerlink" title="为什么要做这个软件"></a>为什么要做这个软件</h2><p>这其实是我在玩一个小游戏的时候，需要重复、快速的点击鼠标，但是我还比较懒，故制作了这样一个小程序来代替我执行这些操作。</p><h2 id="软件特点"><a href="#软件特点" class="headerlink" title="软件特点"></a>软件特点</h2><p>开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、新增的随机间隔选项可以在一定程度上防止游戏作弊检测、支持连点鼠标的所有基础按键、支持快捷键控制。</p><h2 id="软件展示"><a href="#软件展示" class="headerlink" title="软件展示"></a>软件展示</h2><div align="center"><img alt="鼠标连点器 软件界面" src="../../../../img/software/鼠标连点器.jpg"></div><h2 id="开源地址-amp-软件下载"><a href="#开源地址-amp-软件下载" class="headerlink" title="开源地址 &amp; 软件下载"></a>开源地址 &amp; 软件下载</h2><p>软件在GitHub上开源，地址：<a href="https://github.com/Wings-Fantasy/Mouse-Click" target="_blank" rel="noopener">源码链接</a><br>软件提供32位与64位的可执行程序，下载地址：<a href="https://github.com/Wings-Fantasy/Mouse-Click/releases" target="_blank" rel="noopener">下载软件</a></p>]]></content>
     
     <summary type="html">
     
@@ -186,9 +186,9 @@
     <link href="https://www.hxshijie.com/2019/06/27/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%81%9A%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85-%E7%94%A8%E6%89%8B%E6%9C%BA%E6%8E%A7%E5%88%B6%E7%94%B5%E7%81%AF/"/>
     <id>https://www.hxshijie.com/2019/06/27/手把手教你做智能家居-用手机控制电灯/</id>
     <published>2019-06-26T16:02:35.000Z</published>
-    <updated>2019-06-27T03:19:49.049Z</updated>
+    <updated>2019-10-12T04:50:45.555Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>都说2019年是5G的元年，那么5G是什么？它有什么用？我用一期视频来告诉你们。5G带给我们更大的带宽，更高的速度，同时，IPv6协议也即将民用。有网友计算过IPv4最多可以提供约42.9亿个地址，这个数字看起来很庞大，但事实上IPv4的地址早已枯竭。我们现在用的根本不是公网IP，而是被NAT转换过的私有IP，私有IP是分域的，不同的域可以有相同的IP，过多的不细说了。IPv6据说能给地球上的每一粒沙子一个公网IP，这样想象一下，是不是突然感觉IPv4太弱了。更高的速度在全民公网IP的加持下，必定会催生出一大批智能硬件产品。</p><h2 id="一些想说的话"><a href="#一些想说的话" class="headerlink" title="一些想说的话"></a>一些想说的话</h2><p>这个视频并不是给0基础的观众看的，观看这个视频前最少要会编程，会搭接基本电路。0基础编程的视频非常多，我这里就不列出来了。视频的最开始也阐明了这个视频所需要的前置知识。</p><h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><div align="center"><iframe src="https://player.bilibili.com/player.html?aid=40363452&amp;cid=70887051&amp;page=1" width="600" height="450" frameborder="0" allowfullscreen="true"></iframe></div>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>都说2019年是5G的元年，那么5G是什么？它有什么用？我用一期视频来告诉你们。5G带给我们更大的带宽，更高的速度，同时，IPv6协议也即将民用。有网友计算过IPv4最多可以提供约42.9亿个地址，这个数字看起来很庞大，但事实上IPv4的地址早已枯竭。我们现在用的根本不是公网IP，而是被NAT转换过的私有IP，私有IP是分域的，不同的域可以有相同的IP，过多的不细说了。IPv6据说能给地球上的每一粒沙子一个公网IP，这样想象一下，是不是突然感觉IPv4太弱了。更高的速度在全民公网IP的加持下，必定会催生出一大批智能硬件产品。</p><h2 id="一些想说的话"><a href="#一些想说的话" class="headerlink" title="一些想说的话"></a>一些想说的话</h2><p>这个视频并不是给0基础的观众看的，观看这个视频前最少要会编程，会搭接基本电路。0基础编程的视频非常多，我这里就不列出来了。视频的最开始也阐明了这个视频所需要的前置知识。</p><h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><div align="center" style="position: relative;width: 100%;height: 0;padding-bottom: 75%;"><iframe src="https://player.bilibili.com/player.html?aid=40363452&amp;cid=70887051&amp;page=1" style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;" frameborder="0" allowfullscreen="true"></iframe></div>]]></content>
     
     <summary type="html">
     
