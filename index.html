@@ -201,7 +201,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/Arduino/" style="font-size: 10px;">Arduino</a> <a href="/tags/C/" style="font-size: 20px;">C++</a> <a href="/tags/原创/" style="font-size: 15px;">原创</a> <a href="/tags/国际象棋/" style="font-size: 15px;">国际象棋</a> <a href="/tags/开源/" style="font-size: 15px;">开源</a> <a href="/tags/智能家居/" style="font-size: 10px;">智能家居</a> <a href="/tags/编程题/" style="font-size: 15px;">编程题</a>
+                        <a href="/tags/Arduino/" style="font-size: 10px;">Arduino</a> <a href="/tags/C/" style="font-size: 20px;">C++</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/原创/" style="font-size: 15px;">原创</a> <a href="/tags/国际象棋/" style="font-size: 15px;">国际象棋</a> <a href="/tags/开源/" style="font-size: 15px;">开源</a> <a href="/tags/智能家居/" style="font-size: 10px;">智能家居</a> <a href="/tags/编程题/" style="font-size: 15px;">编程题</a>
                     </div>
                 </section>
                 
@@ -279,6 +279,89 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-Ubuntu-Linux学习日记-开机时自动打开小键盘" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2019/11/24/Ubuntu-Linux学习日记-开机时自动打开小键盘/" class="article-date">
+      <time datetime="2019-11-24T12:17:00.000Z" itemprop="datePublished">2019-11-24</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2019/11/24/Ubuntu-Linux学习日记-开机时自动打开小键盘/">Ubuntu Linux学习日记 - 开机时自动打开小键盘</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>使用Ubuntu Linux有一段时间了，之前一直用的16.04 LTS版，最近才升级到18.04 LTS版。更新之后我惊讶的发现我的小键盘居然关闭了？！因为我的开机密码中有数字，习惯性的用小键盘输入，所以刚更新就发现了这个问题。</p>
+<h2 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h2><p>我使用Ubuntu 16.04 LTS版的时候，其实小键盘的开关也是默认关闭的，当时我的处理方式是用apt安装了<code>numlockx</code>软件，然后更改了一个配置文件。升级系统后发现小键盘又默认关闭了。</p>
+<h2 id="排查问题"><a href="#排查问题" class="headerlink" title="排查问题"></a>排查问题</h2><p>我的第一反应是去apt看一下numlockx软件还在不，终端显示已安装，排除。接下来去找配置文件，发现当初编辑的文件不存在。</p>
+<h2 id="找到原因"><a href="#找到原因" class="headerlink" title="找到原因"></a>找到原因</h2><p>经过多次Google搜索得知：<code>50-unity-greeter.conf</code>文件已被弃用，并且没有替代的文件。不能在开机后执行一条命令了，也就是说numlockx软件已经不能完成我的期望了，故卸载。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>又经过了多次Google搜索后找到了一个不用安装任何软件的方法，并且此方法全版本通用。</p>
+<p>首先我们需要切换到root用户，普通用户可那么高权限执行接下来的命令。</p>
+<blockquote>
+<p>xiaobai@Ubuntu:~$ sudo -i</p>
+</blockquote>
+<p>接下来我们需要切换到gdm用户并且暂时授予执行bash命令的权限。</p>
+<blockquote>
+<p>root@Ubuntu:~# su gdm -s /bin/bash</p>
+</blockquote>
+<p>接下来到了重头戏，真正达到目的的是下面这条命令，最后引号里的值为<strong>on</strong>代表开启数字小键盘。</p>
+<blockquote>
+<p>gdm@Ubuntu:/root$ gsettings set org.gnome.settings-daemon.peripherals.keyboard numlock-state ‘on’</p>
+</blockquote>
+<p>到这里设置已经完成了，重新启动系统就可以看到效果了。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/学习/">学习</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
   
     <article id="post-国际象棋学习日记-子力价值" class="article article-type-post" itemscope itemprop="blogPost">
   

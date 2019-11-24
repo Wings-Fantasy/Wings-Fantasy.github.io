@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.hxshijie.com/"/>
-  <updated>2019-10-12T01:43:56.197Z</updated>
+  <updated>2019-11-24T15:28:49.151Z</updated>
   <id>https://www.hxshijie.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu Linux学习日记 - 开机时自动打开小键盘</title>
+    <link href="https://www.hxshijie.com/2019/11/24/Ubuntu-Linux%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E5%BC%80%E6%9C%BA%E6%97%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E5%B0%8F%E9%94%AE%E7%9B%98/"/>
+    <id>https://www.hxshijie.com/2019/11/24/Ubuntu-Linux学习日记-开机时自动打开小键盘/</id>
+    <published>2019-11-24T12:17:00.000Z</published>
+    <updated>2019-11-24T15:28:49.151Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用Ubuntu Linux有一段时间了，之前一直用的16.04 LTS版，最近才升级到18.04 LTS版。更新之后我惊讶的发现我的小键盘居然关闭了？！因为我的开机密码中有数字，习惯性的用小键盘输入，所以刚更新就发现了这个问题。</p><h2 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h2><p>我使用Ubuntu 16.04 LTS版的时候，其实小键盘的开关也是默认关闭的，当时我的处理方式是用apt安装了<code>numlockx</code>软件，然后更改了一个配置文件。升级系统后发现小键盘又默认关闭了。</p><h2 id="排查问题"><a href="#排查问题" class="headerlink" title="排查问题"></a>排查问题</h2><p>我的第一反应是去apt看一下numlockx软件还在不，终端显示已安装，排除。接下来去找配置文件，发现当初编辑的文件不存在。</p><h2 id="找到原因"><a href="#找到原因" class="headerlink" title="找到原因"></a>找到原因</h2><p>经过多次Google搜索得知：<code>50-unity-greeter.conf</code>文件已被弃用，并且没有替代的文件。不能在开机后执行一条命令了，也就是说numlockx软件已经不能完成我的期望了，故卸载。</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>又经过了多次Google搜索后找到了一个不用安装任何软件的方法，并且此方法全版本通用。</p><p>首先我们需要切换到root用户，普通用户可那么高权限执行接下来的命令。</p><blockquote><p>xiaobai@Ubuntu:~$ sudo -i</p></blockquote><p>接下来我们需要切换到gdm用户并且暂时授予执行bash命令的权限。</p><blockquote><p>root@Ubuntu:~# su gdm -s /bin/bash</p></blockquote><p>接下来到了重头戏，真正达到目的的是下面这条命令，最后引号里的值为<strong>on</strong>代表开启数字小键盘。</p><blockquote><p>gdm@Ubuntu:/root$ gsettings set org.gnome.settings-daemon.peripherals.keyboard numlock-state ‘on’</p></blockquote><p>到这里设置已经完成了，重新启动系统就可以看到效果了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用Ubuntu Linux有一段时间了，之前一直用的16.04 LTS版，最近才升级到18.04 LTS版。更新之后我惊讶的发现我的小键盘居然关闭了？！因为我的开机密码中有数字，习惯性的用小键盘输入，所以刚更新就发现了这个问题。&lt;/p&gt;
+&lt;h2 id=&quot;发现问题&quot;&gt;&lt;a 
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://www.hxshijie.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://www.hxshijie.com/tags/Ubuntu/"/>
+    
+      <category term="Linux" scheme="https://www.hxshijie.com/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>国际象棋学习日记 - 子力价值</title>
