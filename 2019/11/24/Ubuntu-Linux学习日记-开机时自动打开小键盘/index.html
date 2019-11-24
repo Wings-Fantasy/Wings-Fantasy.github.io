@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="悲剧小白的个人博客">
 <meta property="og:description" content="使用Ubuntu Linux有一段时间了，之前一直用的16.04 LTS版，最近才升级到18.04 LTS版。更新之后我惊讶的发现我的小键盘居然关闭了？！因为我的开机密码中有数字，习惯性的用小键盘输入，所以刚更新就发现了这个问题。 发现问题我使用Ubuntu 16.04 LTS版的时候，其实小键盘的开关也是默认关闭的，当时我的处理方式是用apt安装了numlockx软件，然后更改了一个配置文件。升">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-11-24T15:28:49.151Z">
+<meta property="og:updated_time" content="2019-11-24T16:01:23.795Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu Linux学习日记 - 开机时自动打开小键盘">
 <meta name="twitter:description" content="使用Ubuntu Linux有一段时间了，之前一直用的16.04 LTS版，最近才升级到18.04 LTS版。更新之后我惊讶的发现我的小键盘居然关闭了？！因为我的开机密码中有数字，习惯性的用小键盘输入，所以刚更新就发现了这个问题。 发现问题我使用Ubuntu 16.04 LTS版的时候，其实小键盘的开关也是默认关闭的，当时我的处理方式是用apt安装了numlockx软件，然后更改了一个配置文件。升">
@@ -321,7 +321,7 @@
 <h2 id="排查问题"><a href="#排查问题" class="headerlink" title="排查问题"></a>排查问题</h2><p>我的第一反应是去apt看一下numlockx软件还在不，终端显示已安装，排除。接下来去找配置文件，发现当初编辑的文件不存在。</p>
 <h2 id="找到原因"><a href="#找到原因" class="headerlink" title="找到原因"></a>找到原因</h2><p>经过多次Google搜索得知：<code>50-unity-greeter.conf</code>文件已被弃用，并且没有替代的文件。不能在开机后执行一条命令了，也就是说numlockx软件已经不能完成我的期望了，故卸载。</p>
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>又经过了多次Google搜索后找到了一个不用安装任何软件的方法，并且此方法全版本通用。</p>
-<p>首先我们需要切换到root用户，普通用户可那么高权限执行接下来的命令。</p>
+<p>首先我们需要切换到root用户，普通用户可没那么高权限执行接下来的命令。</p>
 <blockquote>
 <p>xiaobai@Ubuntu:~$ sudo -i</p>
 </blockquote>
@@ -345,7 +345,7 @@
         <p><span>本文标题:</span><a  href="/2019/11/24/Ubuntu-Linux学习日记-开机时自动打开小键盘/">Ubuntu Linux学习日记 - 开机时自动打开小键盘</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 悲剧小白 的个人博客">悲剧小白</a></p>
         <p><span>发布时间:</span>2019年11月24日 - 20时17分</p>
-        <p><span>最后更新:</span>2019年11月24日 - 23时28分</p>
+        <p><span>最后更新:</span>2019年11月25日 - 00时01分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/11/24/Ubuntu-Linux学习日记-开机时自动打开小键盘/" title="Ubuntu Linux学习日记 - 开机时自动打开小键盘">https://www.hxshijie.com/2019/11/24/Ubuntu-Linux学习日记-开机时自动打开小键盘/</a>
             <span class="copy-path" data-clipboard-text="原文: https://www.hxshijie.com/2019/11/24/Ubuntu-Linux学习日记-开机时自动打开小键盘/　　作者: 悲剧小白" title=""></span>
