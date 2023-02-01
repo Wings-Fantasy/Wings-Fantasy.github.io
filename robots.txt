@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /js
+Disallow: /css
+Disallow: /image
+Disallow: /config
+Disallow: /page
+Disallow: /vendors
+Disallow: CNAME
+Disallow: search.json
+
+Sitemap: https://www.hxshijie.com/sitemap.xml
