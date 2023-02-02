@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="/images/icon.ico">
   
-  <title>密码生成器 | 悲剧小白</title>
+  <title>Cloudflare代理GitHub Pages笔记 | 悲剧小白</title>
   <meta name="author" content="悲剧小白" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -14,24 +14,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="C++, 原创, 开源" />
+    <meta name="keywords" content="CDN, DNS, GitHub" />
   
-  <meta name="description" content="为什么要做这个软件最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Token验证，就决定发出来了。 软件特点开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、同时支持大小写字母和数字的组合，最高支持一次生成100位的密码，">
+  <meta name="description" content="前言这里主要记录一下我的设置步骤和踩到的坑，Cloudflare帐号注册、域名NS记录、GitHub仓库创建、个人令牌创建和hexo使用令牌没什么需要特别注意的，这里就不赘述了。 补充：百度真的NB，自己的爬虫被GtiHub拉黑了死不承认，谷歌和必应都收录网站了还腆着脸跟我说网站不能访问。套上个Cloudflare就开始收录内容了，emmmm不多评价了。 操作步骤第一次设置CloudflareDN">
 <meta property="og:type" content="article">
-<meta property="og:title" content="密码生成器">
-<meta property="og:url" content="https://www.hxshijie.com/2019/06/28/%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/index.html">
+<meta property="og:title" content="Cloudflare代理GitHub Pages笔记">
+<meta property="og:url" content="https://www.hxshijie.com/2023/02/02/Cloudflare%E4%BB%A3%E7%90%86GitHub-Pages%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="悲剧小白">
-<meta property="og:description" content="为什么要做这个软件最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Token验证，就决定发出来了。 软件特点开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、同时支持大小写字母和数字的组合，最高支持一次生成100位的密码，">
+<meta property="og:description" content="前言这里主要记录一下我的设置步骤和踩到的坑，Cloudflare帐号注册、域名NS记录、GitHub仓库创建、个人令牌创建和hexo使用令牌没什么需要特别注意的，这里就不赘述了。 补充：百度真的NB，自己的爬虫被GtiHub拉黑了死不承认，谷歌和必应都收录网站了还腆着脸跟我说网站不能访问。套上个Cloudflare就开始收录内容了，emmmm不多评价了。 操作步骤第一次设置CloudflareDN">
 <meta property="og:locale">
-<meta property="og:image" content="https://www.hxshijie.com/images/software/%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8.jpg">
-<meta property="article:published_time" content="2019-06-28T12:42:59.000Z">
-<meta property="article:modified_time" content="2023-02-01T10:44:21.565Z">
+<meta property="og:image" content="https://www.hxshijie.com/images/icon.ico">
+<meta property="article:published_time" content="2023-02-02T06:25:03.000Z">
+<meta property="article:modified_time" content="2023-02-02T10:04:50.647Z">
 <meta property="article:author" content="悲剧小白">
-<meta property="article:tag" content="C++">
-<meta property="article:tag" content="原创">
-<meta property="article:tag" content="开源">
+<meta property="article:tag" content="DNS">
+<meta property="article:tag" content="CDN">
+<meta property="article:tag" content="GitHub">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.hxshijie.com/images/software/%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8.jpg">
+<meta name="twitter:image" content="https://www.hxshijie.com/images/icon.ico">
   
   <!-- 站点验证相关 -->
   
@@ -136,15 +136,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://www.hxshijie.com/2019/06/28/%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/">
+    <link itemprop="mainEntityOfPage" href="https://www.hxshijie.com/2023/02/02/Cloudflare%E4%BB%A3%E7%90%86GitHub-Pages%E7%AC%94%E8%AE%B0/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">密码生成器</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Cloudflare代理GitHub Pages笔记</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2019-06-28T12:42:59.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2019-06-28</time></li>
+                <li><time datetime="2023-02-02T06:25:03.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-02-02</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">悲剧小白</span>
                 </li>
@@ -152,7 +152,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        313
+                        1303
                     
                     字
                 </li>
@@ -163,17 +163,30 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1675248261565"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1675332290647"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h2 id="为什么要做这个软件"><a href="#为什么要做这个软件" class="headerlink" title="为什么要做这个软件"></a>为什么要做这个软件</h2><p>最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Token验证，就决定发出来了。</p>
-<h2 id="软件特点"><a href="#软件特点" class="headerlink" title="软件特点"></a>软件特点</h2><p>开源软件，允许在GPLv3协议下修改源代码、界面简洁干净，功能专一、同时支持大小写字母和数字的组合，最高支持一次生成100位的密码，绝对够用、生成后的密码支持更改，可以用来做一些微调、新增复制到剪贴板功能，一键复制密码</p>
-<h2 id="软件展示"><a href="#软件展示" class="headerlink" title="软件展示"></a>软件展示</h2><div align="center"><img alt="密码生成器 软件界面" src="../../../../images/software/密码生成器.jpg" /></div>
+            <div itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这里主要记录一下我的设置步骤和踩到的坑，Cloudflare帐号注册、域名NS记录、GitHub仓库创建、个人令牌创建和hexo使用令牌没什么需要特别注意的，这里就不赘述了。</p>
+<p>补充：百度真的NB，自己的爬虫被GtiHub拉黑了死不承认，谷歌和必应都收录网站了还腆着脸跟我说网站不能访问。套上个Cloudflare就开始收录内容了，emmmm不多评价了。</p>
+<h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><h3 id="第一次设置Cloudflare"><a href="#第一次设置Cloudflare" class="headerlink" title="第一次设置Cloudflare"></a>第一次设置Cloudflare</h3><h4 id="DNS解析"><a href="#DNS解析" class="headerlink" title="DNS解析"></a>DNS解析</h4><p>类型：<code>CNAME</code>，名称：<code>www</code>，目标是GtiHub Pages默认的域名<code>&lt;用户名&gt;.github.io</code>，<strong>不使用代理</strong>。</p>
+<p>这个很重要，初次设置时不能选代理，不然GitHub检测不到CNAME指向，无法开启https访问。很多搜索引擎将https作为加分项，强制https访问会提高权重。</p>
+<h4 id="SSL-x2F-TLS"><a href="#SSL-x2F-TLS" class="headerlink" title="SSL&#x2F;TLS"></a>SSL&#x2F;TLS</h4><p>概述选项，SSL&#x2F;TLS 加密模式设置为<code>完全</code>，因为GtiHub Pages有自己的证书，我们不需要Cloudflare的通用证书。</p>
+<p>边缘证书选项，打开始终使用 HTTPS。</p>
+<h4 id="安全性（可选）"><a href="#安全性（可选）" class="headerlink" title="安全性（可选）"></a>安全性（可选）</h4><p>自动程序选项，打开自动程序攻击模式，这样能拦截大多数自动跑网站目录的脚本。</p>
+<p>设置选项，安全级别推荐设置为中、质询通过期保持默认的30分钟即可、打开浏览器完整性检查，这样能在一定程度上防止手动构建http请求</p>
+<h3 id="设置GitHub-Pages"><a href="#设置GitHub-Pages" class="headerlink" title="设置GitHub Pages"></a>设置GitHub Pages</h3><p>打开GitHub Pages所属仓库的设置页面，切换到Pages选项卡，找到<code>Custom domain</code>设置项填写自己的域名点Save。过一会就会出现<code>Enforce HTTPS</code>选项，勾选后就可以使用https访问了。</p>
+<h3 id="第二次设置Cloudflare"><a href="#第二次设置Cloudflare" class="headerlink" title="第二次设置Cloudflare"></a>第二次设置Cloudflare</h3><h4 id="DNS解析-1"><a href="#DNS解析-1" class="headerlink" title="DNS解析"></a>DNS解析</h4><p>修改第一次设置的DNS，更改为<strong>使用代理</strong>，这样就使用了Cloudflare的CDN帮我们加速访问了。</p>
+<h2 id="问题与解决方案"><a href="#问题与解决方案" class="headerlink" title="问题与解决方案"></a>问题与解决方案</h2><p>Q：我想让根域名和www前缀都能访问网站</p>
+<p>A：在SEO实践中，当同一个域名两个不同的链接内容相同时，会触发搜索引擎惩罚而被降权。最优解是将一个链接使用301重定向到两一个链接上，本博客将根域名重定向到了www前缀上，实现了同时访问还避免了被惩罚。</p>
+<p>网络上很多教程写的是创建页面规则，这是错误的，不适用于GitHub Pages。正确的做法是再创建一条DNS记录，同样是CNAME到<code>&lt;用户名&gt;.github.io</code>，使用代理。以本博客为例，当我们使用根域名访问时，GitHub Pages会返回301，引导浏览器访问www域名。</p>
+<br />
 
-<h2 id="开源地址-amp-软件下载"><a href="#开源地址-amp-软件下载" class="headerlink" title="开源地址 &amp; 软件下载"></a>开源地址 &amp; 软件下载</h2><p>软件在GitHub上开源，地址：<a target="_blank" rel="noopener" href="https://github.com/Wings-Fantasy/RandomPassword">源码链接</a><br>软件提供32位与64位的可执行程序，下载地址：<a target="_blank" rel="noopener" href="https://github.com/Wings-Fantasy/RandomPassword/releases">下载软件</a></p>
+<p>Q：访问网站无限次301跳转到自己</p>
+<p>A：SSL&#x2F;TLS 加密模式设置为<code>完全</code>。默认设置下，Cloudflare会使用http访问源站，GitHub Pages返回301引导浏览器使用https访问，浏览器再次请求网站时又会经过Cloudflare，如此形成循环301跳转。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>研究Cloudflare的DNS花了三天时间，最终的结果让我很满意，在大陆内访问速度明显变快了，还顺便解决了百度搜索引擎收录的问题。Q&amp;A的部分其实就是我跳进去的坑，大多数的时间都用来尝试解决那个301的问题了，希望这篇笔记能帮到其他人。</p>
 </div>
         </div>
         
@@ -227,7 +240,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://www.hxshijie.com/2019/06/28/%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/",
+                text: "https://www.hxshijie.com/2023/02/02/Cloudflare%E4%BB%A3%E7%90%86GitHub-Pages%E7%AC%94%E8%AE%B0/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -239,9 +252,10 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://www.hxshijie.com/2019/06/28/%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/";
-            const title         = "「密码生成器」";
-            const excerpt       = `为什么要做这个软件最开始是因为要下载一些电子书，然后被一些流氓网站强制注册才能下载。我不想因为这种小网站被脱库造成我的常用密码泄露，又不会现编密码，所以就写了这个软件帮我临时生成一个字符串当作密码。后来发现可以用作于一些随机的Toke...`;
+            const hostUrl       = "https://www.hxshijie.com/2023/02/02/Cloudflare%E4%BB%A3%E7%90%86GitHub-Pages%E7%AC%94%E8%AE%B0/";
+            const title         = "「Cloudflare代理GitHub Pages笔记」";
+            const excerpt       = `前言这里主要记录一下我的设置步骤和踩到的坑，Cloudflare帐号注册、域名NS记录、GitHub仓库创建、个人令牌创建和hexo使用令牌没什么需要特别注意的，这里就不赘述了。
+补充：百度真的NB，自己的爬虫被GtiHub拉黑了死不...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -260,10 +274,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/C/" rel="tag">C++</a>, <a class="tag-none-link" href="/tags/%E5%8E%9F%E5%88%9B/" rel="tag">原创</a>, <a class="tag-none-link" href="/tags/%E5%BC%80%E6%BA%90/" rel="tag">开源</a>
+                    <a class="tag-none-link" href="/tags/CDN/" rel="tag">CDN</a>, <a class="tag-none-link" href="/tags/DNS/" rel="tag">DNS</a>, <a class="tag-none-link" href="/tags/GitHub/" rel="tag">GitHub</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-02-01T10:44:21.565Z" itemprop="dateModified">最后编辑：2023-02-01</time>
+                    <time datetime="2023-02-02T10:04:50.647Z" itemprop="dateModified">最后编辑：2023-02-02</time>
                 </div>
             </div>
         </footer>
@@ -272,13 +286,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" C++学习日记 - 拆分数字" href="/2019/06/27/C++学习日记-拆分数字/">&lt; 上一篇</a>
+                <a title=" Arch Linux学习日记 - GNOME登录时打开小键盘" href="/2021/02/10/Arch-Linux学习日记-GNOME登录时打开小键盘/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 国际象棋学习日记 - 记录一局比赛" href="/2019/07/02/国际象棋学习日记-记录一局比赛/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     

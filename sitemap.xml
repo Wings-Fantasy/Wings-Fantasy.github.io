@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.hxshijie.com/2020/03/28/Debian-Linux%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-Debian%E7%9A%84%E4%BD%BF%E7%94%A8%E6%84%9F%E5%8F%97/</loc>
+    <loc>https://www.hxshijie.com/2023/02/02/Cloudflare%E4%BB%A3%E7%90%86GitHub-Pages%E7%AC%94%E8%AE%B0/</loc>
     
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hxshijie.com/2019/09/19/C++%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E6%89%BE%E5%87%BA%E7%BB%99%E5%AE%9A%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E5%A5%87%E6%95%B0%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/</loc>
+    
+    <lastmod>2023-02-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,14 +22,14 @@
   <url>
     <loc>https://www.hxshijie.com/2019/06/27/C++%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E6%8B%86%E5%88%86%E6%95%B0%E5%AD%97/</loc>
     
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.hxshijie.com/2019/09/19/C++%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E6%89%BE%E5%87%BA%E7%BB%99%E5%AE%9A%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E5%A5%87%E6%95%B0%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/</loc>
+    <loc>https://www.hxshijie.com/2020/03/28/Debian-Linux%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-Debian%E7%9A%84%E4%BD%BF%E7%94%A8%E6%84%9F%E5%8F%97/</loc>
     
     <lastmod>2023-02-01</lastmod>
     
@@ -121,7 +130,7 @@
 
   <url>
     <loc>https://www.hxshijie.com/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -129,77 +138,98 @@
   
   <url>
     <loc>https://www.hxshijie.com/tags/Arch/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/Linux/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/C/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/%E7%BC%96%E7%A8%8B%E9%A2%98/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hxshijie.com/tags/DNS/</loc>
+    <lastmod>2023-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hxshijie.com/tags/CDN/</loc>
+    <lastmod>2023-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hxshijie.com/tags/GitHub/</loc>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/Debian/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/Ubuntu/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/%E5%8E%9F%E5%88%9B/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/%E5%BC%80%E6%BA%90/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/tags/Arduino/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -208,21 +238,28 @@
   
   <url>
     <loc>https://www.hxshijie.com/categories/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hxshijie.com/categories/%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/categories/%E8%BD%AF%E4%BB%B6%E5%8F%91%E5%B8%83/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.hxshijie.com/categories/%E8%A7%86%E9%A2%91/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
